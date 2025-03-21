@@ -1,23 +1,13 @@
-简体中文 | [English](./README_EN.md)
-
 <p>
-<strong><h2>無名の主页</h2></strong>
-简单的小主页，原来的看够了，重新弄了一个
+<strong><h2>Mr.Liucyの主页</h2></strong>
 </p>
 
-![無名の主页](/screenshots/main.jpg)
+
+![Mr.Liucyの主页](/screenshots/main.jpg)
 
 >主页的 Logo 字体已经过压缩，若用本站 Logo 以外的字母会变回默认字体，这里是 [完整字体](https://file.imsyy.top/font/Other/Pacifico-Regular.ttf)，若无法下载，可将字体目录下的 `Pacifico-Regular-all.ttf` 进行替换
 
-### Demo
-
->由于 CDN 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
-
-- [無名の主页](https://www.imsyy.top)
-- [無名の主页 - Dev](https://home-imsyy.vercel.app)
-- [無名の主页 - 备用线路](https://home-5iw.pages.dev)
-
-### 功能
+## 功能
 
 - [x] 载入动画
 - [x] 站点简介
@@ -27,6 +17,12 @@
 - [x] 时光进度条
 - [x] 音乐播放器
 - [x] 移动端适配
+
+
+
+## 部署
+
+
 
 ### 自动部署
 
@@ -76,7 +72,9 @@ docker build -t home .
 docker run -p 12445:12445 -d home
 ```
 
-### 网站链接
+
+
+## 网站链接
 
 在 `src/assets/siteLinks.json` 中可以自定义网站链接（以指向自己的网站）:
 
@@ -84,7 +82,7 @@ docker run -p 12445:12445 -d home
 {
   "icon": "Blog",						
   "name": "博客",						
-  "link": "https://blog.imsyy.top/"	
+  "link": "https://liuchenyang.top/"	
 },
 ```
 
@@ -118,11 +116,11 @@ const siteIcon = {
 };
 ```
 
-### 社交链接
+## 社交链接
 
 在 `src/assets/socialLinks.json` 中可以自定义社交链接。
 
-### 天气
+## 天气
 
 天气及地区获取需要 `高德开放平台` 相关 API
 
@@ -131,7 +129,7 @@ const siteIcon = {
 也可自行更换其他方式
 
 
-### 音乐
+## 音乐
 
 >本项目采用了基于 `MetingJS` 的 `Aplayer` 音乐播放器，可实现快速自定义歌单  
 >*仅支持 **中国大陆地区**
@@ -149,7 +147,7 @@ VITE_SONG_TYPE = "playlist"
 VITE_SONG_ID = "7452421335"
 ```
 
-### 字体
+## 字体
 
 现采用 `HarmonyOS Sans` 开源字体，采用字体拆分，提升加载速度
 
@@ -162,14 +160,14 @@ VITE_SONG_ID = "7452421335"
 
 >由于本项目引入了中文字体，需要压缩中文字体以提高网页加载速度（ 也可以取消使用中文字体 ）
 
-#### 中文字体去除繁体
+### 中文字体去除繁体
 
 - 安装 `Python 3.7` 和 `pip`
 - 运行 `pip install fonttools`
 - 下载 [sc_unicode.txt](https://gist.githubusercontent.com/imaegoo/d64e5088b723c2e02c40985f55ff12db/raw/5ebd2ce49418c73459a9dfe050483409306a6c1d/sc_unicode.txt)
 - 运行 `pyftsubset 字体名称.ttf --unicodes-file=sc_unicode.txt`
 
-#### 字体进一步压缩
+### 字体进一步压缩
 
 - 编译安装 `Google woff2`
 
@@ -192,9 +190,9 @@ make clean all
 
 </details>
 
-### 网站图标及网站背景
+## 网站图标及网站背景
 
-#### 网站背景
+### 网站背景
 
 可以在 `public/images` 中修改网站背景
 
@@ -210,11 +208,11 @@ if (type == 0) {
 }
 ```
 
-#### 网站图标
+### 网站图标
 
 可以在 `public/images/icon` 中修改网站图标。
 
-### 技术栈
+## 技术栈
 
 * [Vue](https://cn.vuejs.org/)
 * [Vite](https://vitejs.cn/vite3-cn/)
@@ -223,7 +221,7 @@ if (type == 0) {
 * [xicons](https://xicons.org/)
 * [Aplayer](https://aplayer.js.org/)
 
-### API
+## API
 
 * [小歪 API](https://api.aixiaowai.cn)
 * [搏天 API](https://api.btstu.cn/doc/sjbz.php)
@@ -231,8 +229,11 @@ if (type == 0) {
 * [高德开放平台](https://lbs.amap.com/)
 * [Hitokoto 一言](https://hitokoto.cn/)
 
-## Star History
+# Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=imsyy/home&type=Date)](https://star-history.com/#imsyy/home&Date)
 
-<a title="SSL" target="_blank" href="https://myssl.com/seal/detail?domain=blog.imsyy.top"><img src="https://img.shields.io/badge/MySSL-安全认证-brightgreen"></a>&nbsp;<a title="CDN" target="_blank" href="https://cdnjs.com/"><img src="https://img.shields.io/badge/CDN-Cloudflare-blue"></a>&nbsp;<a title="Copyright" target="_blank" href="https://imsyy.top/"><img src="https://img.shields.io/badge/Copyright%20%C2%A9%202020--2023-%E7%84%A1%E5%90%8D-red"></a>
+
+[![Star History Chart](https://api.star-history.com/svg?repos=liuchenyang0703/liuchenyang0703.github.io&type=Date)](https://star-history.com/#imsyy/home&Date)
+
+<a title="SSL" target="_blank" href="https://myssl.com/seal/detail?domain=blog.imsyy.top"><img src="https://img.shields.io/badge/MySSL-安全认证-brightgreen"></a>&nbsp;<a title="CDN" target="_blank" href="https://cdnjs.com/"><img src="https://img.shields.io/badge/CDN-Cloudflare-blue"></a>&nbsp;<a title="Copyright" target="_blank" href="https://liuchenyang.top"><img src="https://img.shields.io/badge/Copyright%20%C2%A9%202025--present-%E5%88%98%E6%99%A8%E9%98%B3-red"></a>
+
